@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom right, blue, pink);
+        }
+
+        .diagonal-gradient {
+            padding: 100px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-top: -370px;
+            font-size: 50px;
+            font-family: sans-serif;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            color: #fff;
+            text-align: center;
+            font-size: 42px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-family: sans-serif;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+            font-size: 21px;
+            line-height: 1.3;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        .work-images {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            overflow: auto;
+            position: absolute;
+            margin-top: 0px;
+            margin-bottom: 50px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        .work-image {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 1s;
+        }
+
+        .work-image img {
+            width: 550px;
+            height: auto;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="diagonal-gradient">
+        <h1>Portfolio by ROMAN KARTASHOV</h1>
+        <p>UI Дизайнер с творческим видением и стремлением к инновациям.
+        С опытом в создании уникальных и интуитивных пользовательских интерфейсов, я стремлюсь объединять креативный дизайн с функциональностью.
+        Моя цель - не просто разрабатывать красивые визуальные решения, но также обеспечивать плавный и приятный пользовательский опыт.<br>
+        Используя современные технологии и лучшие практики, я создаю интерфейсы, которые взаимодействуют с пользователями и отражают уникальные характеристики каждого проекта.<br>
+        Моя страсть к деталям и стремление к постоянному совершенствованию помогают достичь выдающихся результатов в мире UI дизайна.</p>
+
+        <h2>Мои работы</h2>
+        <div class="work-images">
+            <div class="work-image">
+                <img src="https://add.pics/images/2023/12/23/525.webp" alt="525.webp" border="0">
+            </div>
+            <div class="work-image">
+                <img src="https://add.pics/images/2023/12/23/14d629c9b017996eb.png" alt="14d629c9b017996eb.png" border="0">
+            </div>
+            <div class="work-image">
+                <img src="https://add.pics/images/2023/12/23/2038518addb373c40.png" alt="2038518addb373c40.png" border="0">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
